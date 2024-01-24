@@ -16,4 +16,6 @@ The logic is as follows:
 - Log when the sell order is executed and determine profit.
 
 - All the best, become a millionaire with this script and buy me a coffee when you do!
+
+  
 (Designed by Iloke Alusala)
