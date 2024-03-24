@@ -66,15 +66,99 @@
 
 ##  Modules
 
-<details closed><summary>.</summary>
+<details closed><summary>DataCollectCandleStick</summary>
 
 | File                                                                                                          | Summary                         |
 | ---                                                                                                           | ---                             |
-| [DataCollectCandleStick.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/DataCollectCandleStick.py) | <code>► INSERT-TEXT-HERE</code> |
+| [DataCollectCandleStick.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/DataCollectCandleStick.py) | The `candlestick_data.py` script in this package facilitates the retrieval of historical CandleStick data from the Binance API. It offers methods to fetch data at different granularities and store it in pandas DataFrame format. The package aims to simplify the process of collecting and storing historical market data for further analysis and visualization.
+
+## Features
+
+- Retrieve CandleStick data for various trading pairs and time intervals.
+- Store data in pandas DataFrame format for easy manipulation and analysis.
+- Support for fetching compressed and uncompressed data.
+- Flexible timestamp formatting for different analysis requirements.
+
+## Usage
+
+To utilize this package, follow these steps:
+
+1. Import the package: `from candlestick_data import *`
+2. Initialize a Binance client using your API keys.
+3. Call the desired function to fetch CandleStick data, providing the required parameters (symbol pair, time interval, start time, end time).
+4. Retrieve the data as a pandas DataFrame for further processing.
+
+</details>
+
+<details closed><summary>cleanLogs</summary>
+
+| File                                                                                                          | Summary                         |
+| ---                                                                                                           | ---                             |
 | [cleanLogs.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/cleanLogs.py)                           | <code>► INSERT-TEXT-HERE</code> |
-| [Crypto_Scanner.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/Crypto_Scanner.py)                 | <code>► INSERT-TEXT-HERE</code> |
-| [BacktesterBot.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/BacktesterBot.py)                   | <code>► INSERT-TEXT-HERE</code> |
-| [mailSender.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/mailSender.py)                         | <code>► INSERT-TEXT-HERE</code> |
+
+</details>
+
+<details closed><summary>Crypto_Scanner</summary>
+
+| File                                                                                                          | Summary                         |
+| ---                                                                                                           | ---                             |
+| [Crypto_Scanner.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/Crypto_Scanner.py)                 | The provided script (`log_analysis.py`) processes a log file (`CryptoLogging(Day4).txt`) containing trading data. It identifies unique trading blocks within the log file and stores them in a set, removing duplicates. The script utilizes marker delimiters to distinguish between different types of trading blocks.
+
+## Features
+
+- Extraction of unique trading blocks from a log file.
+- Detection of specific markers to delineate trading blocks.
+- Storage of unique trading blocks in a set for further analysis.
+
+## Usage
+
+To use this script, follow these steps:
+
+1. Ensure that the log file (`CryptoLogging(Day4).txt`) is located in the same directory as the script.
+2. Run the script using Python.
+3. The script will analyze the log file and print out the unique trading blocks found within.
+</details>
+
+<details closed><summary>BacktesterBot</summary>
+
+| File                                                                                                          | Summary                         |
+| ---                                                                                                           | ---                             |
+| [BacktesterBot.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/BacktesterBot.py)                   | The `cryptobot_price_data.py` script is designed to simplify the process of collecting and managing price data for cryptocurrencies. It provides functions to fetch historical price data, split the data based on currency pairs, and align the dataframes to ensure consistency for analysis. Additionally, the script offers functionalities to save the data to CSV files for future reference.
+
+## Features
+
+- Fetch historical price data for cryptocurrencies using the Yahoo Finance API.
+- Split the dataframes based on currency pairs for individual analysis.
+- Align the dataframes to ensure consistent lengths for comparative analysis.
+- Save the processed data to CSV files for easy storage and retrieval.
+
+## Usage
+
+To utilize this script, follow these steps:
+
+1. Import the necessary modules and packages: `import pandas as pd`, `import yfinance as yf`, etc.
+2. Call the desired functions to fetch and process the price data as needed.
+3. Save the processed data to CSV files for future reference or analysis.
+
+</details>
+
+<details closed><summary>mailSender</summary>
+
+| File                                                                                                          | Summary                         |
+| ---                                                                                                           | ---                             |
+| [mailSender.py](https://github.com/Iloke-Alusala/CryptoBot/blob/master/mailSender.py)                         | A simple Python script to send emails using Gmail SMTP server.
+
+## Installation
+
+No installation required.
+
+## Usage
+
+1. Replace `gmail_address` and `app_password` with your Gmail email address and [App Password](https://support.google.com/accounts/answer/185833) respectively.
+
+2. Set the `to_email`, `subject`, and `message` variables in the `send_email` function call to the desired values.
+
+3. Run the script.
 
 </details>
 
@@ -84,7 +168,7 @@
 
 **System Requirements:**
 
-* **Python**: `version x.y.z`
+* **Python**: `version 3.11.0`
 
 ###  Installation
 
@@ -121,14 +205,6 @@
 > ```console
 > $ pytest
 > ```
-
----
-
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
 ---
 
@@ -179,18 +255,11 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ##  License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
-[**Return**](#-overview)
-
----
-
+### Extra Info...
 
 A Python Bot that trades Cryptocurrencies based off of custom indicators. 
 The main running programme is in Crypto_scanner.
