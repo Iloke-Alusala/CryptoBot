@@ -7,9 +7,6 @@
     <h1 align="center">CRYPTOBOT</h1>
 </p>
 <p align="center">
-    <em><code>► INSERT-TEXT-HERE</code></em>
-</p>
-<p align="center">
 	<!-- Shields.io badges not used with skill icons. --><p>
 <p align="center">
 		<em>Developed with the software and tools below.</em>
@@ -31,22 +28,32 @@
   - [ Installation](#-installation)
   - [ Usage](#-usage)
   - [ Tests](#-tests)
-- [ Project Roadmap](#-project-roadmap)
 - [ Contributing](#-contributing)
 - [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
 </details>
 <hr>
 
 ##  Overview
 
-<code>► INSERT-TEXT-HERE</code>
+<code>The cryptobot is a sophisticated trading bot designed to automate cryptocurrency trading activities. It leverages various algorithms and strategies to analyze market trends, execute trades, and manage assets, all without human intervention. One last thing is that I have excluded the file responsible for generating the custom indicators as it is propriatory, but this boilerplate should still be of extensive value</code>
 
 ---
 
 ##  Features
 
-<code>► INSERT-TEXT-HERE</code>
+<code>Automated Trading: The cryptobot executes trades automatically based on predefined trading strategies. It constantly monitors market conditions and reacts swiftly to changes, allowing for timely and efficient trading.
+
+Data Analysis: It utilizes historical and real-time market data to analyze trends, identify patterns, and make informed trading decisions. This includes candlestick data analysis, technical indicators, and machine learning algorithms to predict market movements.
+
+Risk Management: The bot incorporates risk management protocols to minimize potential losses and maximize profits. This includes setting stop-loss orders, position sizing, and portfolio diversification strategies to mitigate risks.
+
+Backtesting: Before deploying new strategies, the cryptobot conducts extensive backtesting to assess their effectiveness. This involves simulating trades using historical data to evaluate performance and refine strategies accordingly.
+
+Customization: Users can customize trading parameters, such as trading pairs, timeframes, and risk tolerance levels, to align with their investment goals and preferences. Additionally, the bot supports the integration of custom trading strategies and indicators.
+
+Reporting and Analytics: The cryptobot provides comprehensive reporting and analytics tools to track performance, monitor trade history, and analyze profitability metrics. This enables users to gain insights into their trading activities and make data-driven decisions.
+
+Security: Security is paramount in cryptocurrency trading, and the cryptobot prioritizes the safety of user funds and data. It employs industry-standard encryption protocols, secure API integrations, and multi-factor authentication to safeguard accounts and transactions.</code>
 
 ---
 
