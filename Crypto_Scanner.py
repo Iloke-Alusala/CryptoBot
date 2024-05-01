@@ -27,7 +27,7 @@ def main ():
     tfName = "CryptoLogging.txt"
     tfBannedName = "bannedCrypt.txt"
     lastAmtName = "lastAmt.txt"
-
+    
     
     buyThreshold = 4
 
@@ -47,7 +47,8 @@ def main ():
 
     prices = client.get_all_tickers()
 
-    createSpotOrder(client, "PROSUSDT",0.52, 0.25, 100, amt, tfName)
+    #createSpotOrder(client, "PROSUSDT",0.52, 0.25, 100, amt, tfName)
+    
     #print(prices)
     #createOrder(client, "ORDIUSDT", 55.10, 0, 100, amt, 1, tfName)
             
@@ -133,7 +134,7 @@ def main ():
 
         #update price change
         df_datanew = getPriceChange(df_coin, df_cols[1:len(df_cols)])
-        #print("df_data is:\n",df_datanew)
+        print("df_data is:\n",df_datanew)
         markers = getTopChangers(df_datanew, 15) # returns[growers, growersval]
         
         if(open_orders != []):
