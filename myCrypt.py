@@ -17,8 +17,8 @@ sellDelim =  "\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\"
 startDelim = ".--.--.--.--.--.--.--.--.--.--.--.--.--"
 
 def setupClient():
-    api_key = "fygWtUieftT2UIzOwYzsLFXDcC4AoNeA3Ph4svkyaW4zLezSoAFZmWSEXblIJRZv"
-    api_secret = "90MHSDFnBobQ3vXrIprv8yZ6i6HLQ6NjAyweW4MeuVY0flz9usDwmPl9H5ylSx7x"
+    api_key = "Enter API Key"
+    api_secret = "Enter Secret Key"
 
     return Client(api_key, api_secret)
 
